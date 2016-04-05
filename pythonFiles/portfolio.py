@@ -1,8 +1,8 @@
 from functools import wraps
 from flask import Flask, render_template, request, redirect, url_for, session
-webapp = Flask('__name__')
+app = Flask('__name__')
 
-@webapp.route('/')
+@app.route('/')
 def indexpage():
     """ The home page for this webapp. Displays what the site is about/for.
     """
@@ -11,7 +11,7 @@ def indexpage():
                            title = "Portfolio of James Cantwell")
                            
 
-@webapp.route('/games')
+@app.route('/games')
 def goToGames():
     """ Sends the user to the Games Programming page.
     """
@@ -20,7 +20,7 @@ def goToGames():
                            title="Games Programming")
 
                            
-@webapp.route('/3dsculptures')
+@app.route('/3dsculptures')
 def goToSculpting():
     """ Sends the user to the Games Programming page.
     """
@@ -28,7 +28,7 @@ def goToSculpting():
     return render_template("sculptures.html",
                            title="3D Sculptures")
                            
-@webapp.route('/contact')
+@app.route('/contact')
 def goToContact():
     """ Sends the user to the Games Programming page.
     """
@@ -36,7 +36,7 @@ def goToContact():
     return render_template("contact.html",
                            title="Contact James")
 
-@webapp.route('/about')
+@app.route('/about')
 def goToAbout():
     """ Sends the user to the Games Programming page.
     """
@@ -45,5 +45,5 @@ def goToAbout():
                            title="About James")
 
 if __name__ == '__main__':
-    webapp.secret_key = b'..-.keysecretaisthis0101..-'
-    webapp.run(debug=True, host='0.0.0.0')
+    app.secret_key = b'..-.keysecretaisthis0101..-'
+    app.run(debug=True, host='0.0.0.0')
