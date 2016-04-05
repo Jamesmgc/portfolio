@@ -7,7 +7,7 @@ def indexpage():
     """ The home page for this webapp. Displays what the site is about/for.
     """
 
-    return render_template("../html/index.html",
+    return render_template("index.html",
                            title = "Portfolio of James Cantwell")
                            
 
@@ -16,7 +16,7 @@ def goToGames():
     """ Sends the user to the Games Programming page.
     """
     
-    return render_template("../html/gamesProgramming.html",
+    return render_template("gamesProgramming.html",
                            title="Games Programming")
 
                            
