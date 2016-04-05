@@ -46,4 +46,5 @@ def goToAbout():
 
 if __name__ == '__main__':
     app.secret_key = b'..-.keysecretaisthis0101..-'
-    app.run(debug=True, host='0.0.0.0')
+    if 'liveconsole' not in gethostname():
+        app.run(debug=True, host='0.0.0.0')
