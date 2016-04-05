@@ -1,0 +1,77 @@
+body {
+    margin: 0;
+    background-color: #404040;
+}
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    width: 15%;
+    background-color: #555; /*#f1f1f1;*/
+    position: fixed;
+    height: 100%;
+    overflow: auto;
+}
+
+li a {
+    display: block;
+    color: white;
+    padding: 8px 0 8px 16px;
+    text-decoration: none;
+}
+
+li a.active {
+    background-color: #404040; /*#00b3b3; /*#4CAF50*/;
+    color: white;
+}
+
+li a:hover:not(.active) {
+    background-color: #00b3b3;/*#f1f1f1; /*#555;*/
+    color: black; /*white;*/
+}
+
+h2 {
+    color: #00b3b3;
+}
+
+div {
+    margin-left: 20%;
+    padding: 1px 16px;
+    height: 1000px;
+}
+
+a.link:link {
+    color: #00b3b3;
+    background-color: transparent;
+    text-decoration: none;
+}
+a.link:visited {
+    color: #00b3b3;
+    background-color: transparent;
+    text-decoration: none;
+}
+a.link:hover {
+    color: yellow;
+    background-color: transparent;
+    text-decoration: underline;
+}
+a.link:active {
+    color: yellow;
+    background-color: transparent;
+    text-decoration: underline;
+    target = "_blank"
+}
+
+p {
+    width: 75%;
+    color: #f1f1f1;
+    font-size: 18px;
+    word-break: default;
+}
+
+object.CV {
+    /*margin-left: 20%;
+    padding: 1px 16px;*/
+    height: 1370px; /* Ideal size for A4 page. */
+}
