@@ -1,11 +1,8 @@
 from functools import wraps
 from flask import Flask, render_template, request, redirect, url_for, session
-from buzzdata import buzzer, data_for
-
 webapp = Flask('__name__')
 
 @webapp.route('/')
-@check_logged_in
 def indexpage():
     """ The home page for this webapp. Displays what the site is about/for.
     """
@@ -15,7 +12,6 @@ def indexpage():
                            
 
 @webapp.route('/games')
-@check_logged_in
 def goToGames():
     """ Sends the user to the Games Programming page.
     """
@@ -25,7 +21,6 @@ def goToGames():
 
                            
 @webapp.route('/3dsculptures')
-@check_logged_in
 def goToSculpting():
     """ Sends the user to the Games Programming page.
     """
@@ -34,7 +29,6 @@ def goToSculpting():
                            title="3D Sculptures")
                            
 @webapp.route('/contact')
-@check_logged_in
 def goToContact():
     """ Sends the user to the Games Programming page.
     """
@@ -43,7 +37,6 @@ def goToContact():
                            title="Contact James")
 
 @webapp.route('/about')
-@check_logged_in
 def goToSculpting():
     """ Sends the user to the Games Programming page.
     """
