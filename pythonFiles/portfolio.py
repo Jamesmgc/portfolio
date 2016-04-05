@@ -46,4 +46,4 @@ def goToAbout():
 
 if __name__ == '__main__':
     app.secret_key = b'..-.keysecretaisthis0101..-'
-    app.run(debug=True, host='0.0.0.0')
+    app.run()#debug=True, host='0.0.0.0'
