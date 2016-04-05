@@ -37,7 +37,7 @@ def goToContact():
                            title="Contact James")
 
 @webapp.route('/about')
-def goToSculpting():
+def goToAbout():
     """ Sends the user to the Games Programming page.
     """
     
