@@ -1,6 +1,11 @@
 from functools import wraps
 from flask import Flask, render_template, request, redirect, url_for, session
-webapp = Flask('__name__')
+
+import os
+tmpl_dir = os.path.join(os.path.dirname(os.path.abspath(__file__)), 'templates')
+# ...
+app = Flask('__name__', template_folder=tmpl_dir)
+#webapp = Flask('__name__')
 
 @webapp.route('/')
 def indexpage():
