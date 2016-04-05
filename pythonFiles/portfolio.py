@@ -25,7 +25,7 @@ def goToSculpting():
     """ Sends the user to the Games Programming page.
     """
     
-    return render_template("sculptures.html",
+    return render_template(".../html/sculptures.html",
                            title="3D Sculptures")
                            
 @app.route('/contact')
@@ -33,7 +33,7 @@ def goToContact():
     """ Sends the user to the Games Programming page.
     """
     
-    return render_template("contact.html",
+    return render_template(".../html/contact.html",
                            title="Contact James")
 
 @app.route('/about')
@@ -41,7 +41,7 @@ def goToAbout():
     """ Sends the user to the Games Programming page.
     """
     
-    return render_template("about.html",
+    return render_template(".../html/about.html",
                            title="About James")
 
 if __name__ == '__main__':
