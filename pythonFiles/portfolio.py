@@ -20,7 +20,7 @@ def goToGames():
                            title="Games Programming")
 
                            
-@app.route('/3dsculptures')
+'''@app.route('/3dsculptures')
 def goToSculpting():
     """ Sends the user to the Games Programming page.
     """
@@ -42,7 +42,7 @@ def goToAbout():
     """
     
     return render_template(".../html/about.html",
-                           title="About James")
+                           title="About James")'''
 
 if __name__ == '__main__':
     app.secret_key = b'..-.keysecretaisthis0101..-'
